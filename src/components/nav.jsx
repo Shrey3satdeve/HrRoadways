@@ -13,6 +13,7 @@ function Navigation({ isHindi, onToggleLanguage }) {
             donate: "Donate",
             about: "About Us",
             trip: "Trip",
+            blog: "Blog",
         },
         hi: {
             home: "मुख्य पृष्ठ",
@@ -20,6 +21,7 @@ function Navigation({ isHindi, onToggleLanguage }) {
             donate: "दान करें",
             about: "हमारे बारे में",
             trip: "यात्रा",
+            blog: "ब्लॉग",
         },
     };
 
@@ -45,6 +47,7 @@ function Navigation({ isHindi, onToggleLanguage }) {
                         <li><Link to="/donate">{currentLanguage.donate}</Link></li>
                         <li><Link to="/about">{currentLanguage.about}</Link></li>
                         <li><Link to="/trip">{currentLanguage.trip}</Link></li>
+                        <li><Link to="/blog">{currentLanguage.blog}</Link></li>
                         <li className="lang">
                             EN
                             <div className="checkbox-wrapper-5">
@@ -73,6 +76,7 @@ function Navigation({ isHindi, onToggleLanguage }) {
                     <li><Link to="/donate" onClick={toggleSidebar}>{currentLanguage.donate}</Link></li>
                     <li><Link to="/about" onClick={toggleSidebar}>{currentLanguage.about}</Link></li>
                     <li><Link to="/trip" onClick={toggleSidebar}>{currentLanguage.trip}</Link></li>
+                    <li><Link to="/blog" onClick={toggleSidebar}>{currentLanguage.blog}</Link></li>
                     <li className="lang">
                         EN
                         <div className="checkbox-wrapper-5">
