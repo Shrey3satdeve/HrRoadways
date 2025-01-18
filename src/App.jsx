@@ -6,7 +6,7 @@ import Available from './components/Available';
 import AboutUs from './components/Aboutus';
 import Trip from './components/Trip';
 import Footer from './components/footer';
-import Blog from './components/Blog';
+import Blog from './components/Blog'; // Pc529
 
 function Home() {
     return <p>Hero</p>;
@@ -27,14 +27,16 @@ function App() {
 
     return (
         <Router>
+            {/* Pass isHindi and toggle function as props */}
             <Navigation isHindi={isHindi} onToggleLanguage={handleToggleLanguage} />
             <Routes>
                 <Route path='/' element={<Hero isHindi={isHindi} />} />
                 <Route path='/Available' element={<Available isHindi={isHindi} />} />
                 <Route path='/about' element={<AboutUs />} /> 
                 <Route path='/trip' element={<Trip isHindi={isHindi} />} />
-                <Route path='/blog' element={<Blog />} />
+                <Route path='/blog' element={<Blog />} /> {/* P202a */}
             </Routes>
+            {/* Pass isHindi as a prop to Footer */}
         <Footer isHindi={isHindi} />
         </Router>
     );
